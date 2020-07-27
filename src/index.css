@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'webfont';
+  font-display: swap;
+  src: url('//at.alicdn.com/t/webfont_zzj7ied0ntn.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_zzj7ied0ntn.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('//at.alicdn.com/t/webfont_zzj7ied0ntn.woff2') format('woff2'),
+    url('//at.alicdn.com/t/webfont_zzj7ied0ntn.woff') format('woff'),
+    /* chrome、firefox */ url('//at.alicdn.com/t/webfont_zzj7ied0ntn.ttf') format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('//at.alicdn.com/t/webfont_zzj7ied0ntn.svg#NotoSansHans-Black') format('svg'); /* iOS 4.1- */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'webfont';
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #060a1f;
+}
+
+#clock h2 {
+  position: relative;
+  display: block;
+  color: #fff;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.8em;
+}
+#clock #time {
+  display: flex;
+}
+#clock #time div {
+  position: relative;
+  margin: 0 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+#clock #time div span {
+  position: relative;
+  display: block;
+  width: 187px;
+  height: 150px;
+  background: #2196f3;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  z-index: 10;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+#clock #time div span:nth-child(2) {
+  height: 40px;
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
+  font-weight: 508;
+  z-index: 9;
+  box-shadow: none;
+  background: #127fd6;
+  text-transform: uppercase;
+}
+#clock #time div:nth-last-child(2) span {
+  background: #ff006a;
+}
+#clock #time div:nth-last-child(2) span:nth-child(2) {
+  background: #ec0062;
+}
+
+#clock #time div:nth-last-child(1) span {
+  position: absolute;
+  bottom: 0;
+  width: 90px;
+  height: 60px;
+  font-size: 1.8em;
+  background: #fff;
+  color: #000;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
